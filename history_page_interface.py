@@ -83,7 +83,7 @@ def load_data_from_disk(frame):
     file_path = filedialog.askopenfilename(
         defaultextension=".json",
         filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")],
-        title="Save JSON File"
+        title="Load JSON File"
     )
     if file_path:
         with open(file_path, 'r') as json_file:

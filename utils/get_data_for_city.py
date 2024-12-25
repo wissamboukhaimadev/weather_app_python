@@ -1,5 +1,4 @@
 import requests
-import json
 
 url = "https://api.open-meteo.com/v1/forecast"
 
@@ -21,7 +20,3 @@ def get_data_city(latitude, longitude):
 
 
     return donnees_temperature, donnees_humidite, donnees_vitesse_vent, donnees_heure, donnees_weather_code
-
-
-
-    

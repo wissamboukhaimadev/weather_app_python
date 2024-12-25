@@ -9,7 +9,6 @@ import calendar
 
 
 sun_icon=Image.open("./icons/rain.png")
-
 clear_sky=Image.open("./icons/new/clear-sky.png")
 moon=Image.open("./icons/new/moon.png")
 partly_cloudy=Image.open("./icons/new/partly-cloudy.png")
@@ -57,6 +56,7 @@ def search_button_command(input_box, city_name, degre_label, image_label):
         for i in range(0,len(data_time)):
             year, month, day=map(int, data_time[i].split('-'))
             day_of_week=calendar.weekday(year, month, day)
+            
             forcast_title_labels[i].configure(text=calendar.day_name[day_of_week]) 
             forcast_degree_labels[i].configure(text=data_temperature_max[i]) 
             dynamic_icon_label=get_weathercode_icon(data_weather_code[i], clear_sky, moon, partly_cloudy, overcast, foggy, drizzle, cloud, freezing_rain, snow, shower, sun)
@@ -178,5 +178,3 @@ def show_conditions(conditions_frame):
 
     humidity_value=ctk.CTkLabel(conditions_frame, text="0.0%", font=("Arial", 22, "bold"))
     humidity_value.grid(row=4, column=1, padx=20, pady=10, sticky="w")
-
-    

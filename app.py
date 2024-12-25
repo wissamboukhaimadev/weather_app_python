@@ -37,9 +37,6 @@ history_frame.grid_columnconfigure(0,weight=1)
 show_history_page(history_frame)
 show_main_content(main_content)
 
-# side_bar=ctk.CTkFrame(app, fg_color="#202b3b", corner_radius=20)
-# side_bar.grid(row=0, column=5, sticky="nsew")
-
 
 show_navigation(side_bar, main_content, history_frame)
 app.mainloop()

@@ -15,7 +15,7 @@ icons={
 }
 
 def on_enter(event):
-    event.widget.configure(cursor="hand2")       
+    event.widget.configure(cursor="hand2")   
 
 def on_leave(event):
     event.widget.configure(cursor="")  
@@ -48,5 +48,3 @@ def show_navigation(side_bar, main_content, history_frame):
 
         text_label=ctk.CTkLabel(side_bar_navigation,text=label_text)
         text_label.grid(row=1, column=1, pady=5, padx=20)
-
-

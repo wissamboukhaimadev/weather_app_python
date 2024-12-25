@@ -1,5 +1,4 @@
 import requests
-import json
 from datetime import datetime, timedelta
 
 
@@ -32,7 +31,3 @@ def get_data_city_history(latitude, longitude):
     data_wind_speed_10m_max = data['daily']['wind_speed_10m_max']
 
     return data_time, data_weather_code, data_temperature_max, data_temperature_mean, data_precipitation_sum, data_rain_sum, data_wind_speed_10m_max
-
-
-
-
